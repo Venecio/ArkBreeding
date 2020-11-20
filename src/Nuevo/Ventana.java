@@ -347,7 +347,7 @@ public class Ventana extends javax.swing.JFrame {
     private void jagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jagregarActionPerformed
        try {
            PreparedStatement insert =conexion.prepareStatement("INSERT INTO stats_dinos (nombre,nivel,vida,estamina,oxigeno,comida,peso,dano,speed,torpor,imprint) values (?,?,?,?,?,?,?,?,?,?,?)");
-           
+          
            insert.setString(1,jnombre.getText());
            insert.setString(2,jnivel.getText());
            insert.setString(3,jvida.getText());

@@ -12,7 +12,6 @@ public class ConexionBD {
 
 	public Connection conexion(){
 	try{
-
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		conexion = DriverManager.getConnection("jdbc:mysql://localhost/ark_breeding","Venecio","2277");
 		System.out.println("Conectado :D");
