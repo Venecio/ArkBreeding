@@ -13,7 +13,7 @@ public class ConexionBD {
 	public Connection conexion(){
 	try{
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		conexion = DriverManager.getConnection("jdbc:mysql://localhost/ark_breeding","Venecio","2277");
+		conexion = DriverManager.getConnection("jdbc:mysql://localhost/ark_breeding","Venecio","");
 		System.out.println("Conectado :D");
 		}catch(ClassNotFoundException | SQLException e){
 			System.out.println(e.getMessage());	
